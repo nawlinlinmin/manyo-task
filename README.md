@@ -1,24 +1,31 @@
-# README
+#User_Table
+* string :name
+* string :email
+* string :password_digest
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Task_Table
+* string :title
+* content :text
 
-Things you may want to cover:
+#Label_Table
+* name :string
 
-* Ruby version
+##デプロイ方法
 
-* System dependencies
+#Ruby on Rails 5.2.4.4
 
-* Configuration
+#herokuにログイン
+$ heroku login
 
-* Database creation
+#新しいレポジトリを作成
+$ heroku create
 
-* Database initialization
+###Herokuにデプロイ
+$ git push heroku master
 
-* How to run the test suite
+###データベースの移行
+$ heroku run rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###アプリケーションにアクセスを行う
+Herokuアプリのアドレスは、下記URLの形でアクセスできる。
+https://アプリ名.herokuapp.com/
