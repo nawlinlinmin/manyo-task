@@ -1,14 +1,23 @@
-#User_Table
-* string :name
-* string :email
-* string :password_digest
+##User_Table
 
-#Task_Table
-* string :title
-* content :text
+|  カラム  |  データ型 |
+| ---- | ---- |
+| string | name |
+| string | email |
+| string | password_digest |
+
+##Task_Table
+
+|  カラム  |  データ型 |
+| ---- | ---- |
+| string | title |
+| content | text |
 
 #Label_Table
-* name :string
+
+|  カラム  |  データ型 |
+| ---- | ---- |
+| name | string |
 
 ##デプロイ方法
 
