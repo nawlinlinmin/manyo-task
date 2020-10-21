@@ -3,7 +3,7 @@ RSpec.describe 'タスク管理機能', type: :system do
 
   before do
     @task = FactoryBot.create(:task, title: 'task', content: 'submit task', deadline: '2020-12-23', status: '完了', priority: '高')
-    @second_task = FactoryBot.create(:task, title: 'new_task',content: 'difficult task', deadline: '2020-05-24', status: '着手中',priority: '中')
+    @second_task = FactoryBot.create(:task, title: 'new_task',content: 'difficult task', deadline: '2020-12-24', status: '着手中',priority: '中')
   end
 
   describe 'タスク一覧画面' do
@@ -87,7 +87,9 @@ RSpec.describe 'タスク管理機能', type: :system do
        it '該当タスクの内容が表示されたページに遷移する' do
          task_id = FactoryBot.create(:task, title: 'dive_text', content: 'submit task', deadline: '2020-12-23')
          visit task_path(task_id)
-         expect(page).to have_content 'dive_text', 'submit task'
+         expect(page).to have_content 'dive_text'
+         expect(page).to have_content 'submit task'
+
        end
      end
   end
