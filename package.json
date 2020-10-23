@@ -1,15 +1,9 @@
 {
-<<<<<<< HEAD
  "name": "manyo_app",
  "private": true,
  "dependencies": {
   "bootstrap": "3"
  }
 =======
-  "name": "manyo_app",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "3"
-  }
 >>>>>>> fac8399d2bfb1d62b803a4cf2e46a986699966b7
 }
