@@ -1,7 +1,8 @@
+
 {
-  "name": "manyo_app",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "3"
-  }
+ "name": "manyo_app",
+ "private": true,
+ "dependencies": {
+   "bootstrap": "3"
+ }
 }
