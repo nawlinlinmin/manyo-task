@@ -17,3 +17,8 @@
                admin: admin,
               )
 end
+User.create!(name:  "super",
+             email: "super@gmail.com",
+             password:  "111111",
+             password_confirmation: "111111",
+             admin: true)
