@@ -22,3 +22,10 @@ User.create!(name:  "super",
              password:  "111111",
              password_confirmation: "111111",
              admin: true)
+
+Label.create([
+          { name: "Self study" },
+          { name: "Class" },
+          { name: "Question" },
+          { name: "on hold" },
+          ])
